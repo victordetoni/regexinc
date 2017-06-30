@@ -5,10 +5,9 @@
 #include <errno.h>
 #include <pcre.h>
 
-/* code copied from https://stackoverflow.com/questions/21649423/linux-c-libpcre-output-unique-results
-/
+/* 
+/ code copied from https://stackoverflow.com/questions/21649423/linux-c-libpcre-output-unique-results
 / compile: gcc pcre1.c -o pcre1 -lpcre
-/
 */
 
 int main() {
