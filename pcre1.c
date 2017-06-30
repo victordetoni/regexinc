@@ -7,7 +7,7 @@
 
 /* code copied from https://stackoverflow.com/questions/21649423/linux-c-libpcre-output-unique-results
 /
-compile: gcc pcre1.c -o pcre1 -lpcre
+/ compile: gcc pcre1.c -o pcre1 -lpcre
 */
 
 int main() {
@@ -19,9 +19,6 @@ int main() {
   const char *result;
   char *subject = "dskjdskajdasdsakdjskjdsadsadsakdhk";
   myregexp = pcre_compile("([a-z]+)", PCRE_MULTILINE|PCRE_DOTALL|PCRE_NEWLINE_ANYCRLF, &error, &erroroffset, NULL);
-
-sleep(5);
-exit(1);
 
   if (myregexp != NULL) {
     	offsetcount = pcre_exec(myregexp, NULL, subject, strlen(subject), 0, 0, offsets, (0+1)*3);
