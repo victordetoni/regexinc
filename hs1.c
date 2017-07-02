@@ -37,7 +37,7 @@ int main()
                 return -1;
         }
 
-        if (hs_scan(database,data,strlen(data),0,scratch,NULL,//,eventHandler,
+        if (hs_scan(database,data,strlen(data),0,scratch,eventHandler,
                                 pattern) != HS_SUCCESS) {
                 fprintf(stderr, "ERROR: Unable to scan input buffer. Exiting.\n");
                 hs_free_scratch(scratch);
